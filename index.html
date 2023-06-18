@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/bdfbf6e3f1.js" crossorigin="anonymous"></script>
+    <title>Card</title>
+</head>
+<body>
+    
+    <article class="card">
+
+        <span>
+            <img class="image" src="assets/imgs/Nike-jordan.png" alt="nikes-jordan">
+        </span>
+        <h4>Nike Air Pro</h4>
+        <span id="price">Precio: $114.990</span>
+        
+        <input 
+        type="number"
+        placeholder="Cantidad"
+        id="productAmount"
+        min="1">
+
+        <input 
+        type="text"
+        placeholder="yellow"
+        id="productColor">
+
+        <div>
+            <button id="getTotal">Obtener</button>
+            <i id="trash" class="fa-sharp fa-solid fa-trash-can"></i>
+        </div>
+
+        <div id="totalProduct" class="details">
+            <p>Precio: $ <span id="total"></span></p>
+            <p>Cantidad: <span id="amount"></span></p>
+            <p>Color:</p>
+            <span id="colour" class="circle"></span>
+        </div>
+        
+    </article>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
